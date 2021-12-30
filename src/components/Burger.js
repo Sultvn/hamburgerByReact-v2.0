@@ -106,7 +106,7 @@ export default class Burger extends Component {
     const interfacee = this.state2.map((ing) => (
       <React.Fragment key={ing.id}>
         <p>
-          {ing.title} X {ing.quantity} $
+          {ing.title} X {this.state[ing.name]}
         </p>
         <div className="ingredientsBtnBlock">
           <Button
